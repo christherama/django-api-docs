@@ -1,0 +1,7 @@
+*.sqlite3
+*.md
+.idea
+__pycache__
+.git
+.gitignore
+**/docker-compose*
