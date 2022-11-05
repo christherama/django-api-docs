@@ -5,7 +5,7 @@ on:
 
 jobs:
   build-image:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Log in to Docker Hub
@@ -19,6 +19,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
+          platforms: linux/amd64,linux/arm64
           file: Dockerfile
           push: true
           tags: christherama/django-api-docs:main-latest
