@@ -1,8 +1,8 @@
-*.sqlite3
+# *.sqlite3
 *.md
 .idea
 __pycache__
 .git
 .gitignore
 **/docker-compose*
-static/
+**/generated-docs.html
