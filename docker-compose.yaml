@@ -8,8 +8,6 @@ services:
       - uwsgi
       - --ini
       - uwsgi.ini
-      - --env
-      - DJANGO_SETTINGS_MODULE=django_api_docs.settings
       - --http
       - :8000
     ports:
